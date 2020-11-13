@@ -6499,7 +6499,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script>
       $(function(){
-        const initialHash = window.location.hash;
+        var initialHash = window.location.hash;
         go($('.nav-link.active').data('type') !== initialHash.substring(1), initialHash);
 
         $('.nav-link').click(function() {
